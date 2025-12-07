@@ -47,7 +47,7 @@ const PACKAGES = [
     duration: '5 Days / 4 Nights',
     locations: ['London', 'Windsor', 'Bath', 'Oxford'],
     priceRange: '₹89,999', // FINAL APPROVED PRICE (The Anchor)
-    // UNIQUE IMAGE 1: Dynamic London City View (Matching the style of the user's screenshot hero card)
+    // Image: London City Focus (Tower Bridge in view)
     image: 'https://images.unsplash.com/photo-1543884394-5b23d9b4b9b9?auto=format&fit=crop&q=80&w=1000',
     tags: ['🔥 Best Seller', 'All Attractions', 'Private Car'],
     features: [
@@ -59,7 +59,7 @@ const PACKAGES = [
       'Visa Denial Protection Included'
     ],
     isPromo: true,
-    showPrice: true // SHOW PRICE (Marketing Anchor)
+    showPrice: true 
   },
   // 2. LONDON ROYAL FAMILY EXPERIENCE (NOW SECOND)
   {
@@ -68,7 +68,7 @@ const PACKAGES = [
     duration: '7 Days / 6 Nights',
     locations: ['London', 'Windsor', 'Oxford'],
     priceRange: '₹1,45,000', // Internal Reference Price
-    // UNIQUE IMAGE 2: Classic London/Palace setting (Matching user's screenshot style)
+    // Image: Regal architecture/Classic London
     image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1000',
     tags: ['Best Seller', 'Seniors Friendly', 'Shopping'],
     features: [
@@ -78,7 +78,7 @@ const PACKAGES = [
       'Visa Denial Protection Included',
       'Harry Potter Studio Fast-Track'
     ],
-    showPrice: false // HIDE PRICE (Niche Strategy)
+    showPrice: false 
   },
   // 3. SWITZERLAND ALPINE PACKAGE
   {
@@ -87,8 +87,8 @@ const PACKAGES = [
     duration: '7 Days / 6 Nights',
     locations: ['Lucerne', 'Interlaken', 'Zermatt'],
     priceRange: '₹3,50,000', 
-    // UNIQUE IMAGE 3: Majestic Swiss Alps/Luxury Hotel (Matching user's screenshot style)
-    image: 'https://images.unsplash.com/photo-1554629947-3ad751221b22?auto=format&fit=crop&q=80&w=1000',
+    // Image: Focus on pristine Swiss Alps and architecture (Lucerne)
+    image: 'https://images.unsplash.com/photo-1550340441-cb6c18f170af?auto=format&fit=crop&q=80&w=1000',
     tags: ['Alpine', 'Scenic Rail', 'Honeymoon'],
     features: [
       'Stay in Lake-View 5-Star Luxury Suites', 
@@ -106,7 +106,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['Paris', 'Rome', 'Florence'],
     priceRange: '₹2,50,000', 
-    // UNIQUE IMAGE 4: Paris/Multi-city Europe
+    // Image: Classic Paris/Rome view (Eiffel Tower in the background)
     image: 'https://images.unsplash.com/photo-1502602898624-ad8744093c83?auto=format&fit=crop&q=80&w=1000',
     tags: ['Continental', 'Multi-City', 'First Class Rail'],
     features: [
@@ -125,7 +125,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['Amalfi Coast', 'Santorini', 'Mykonos'],
     priceRange: '₹4,50,000',
-    // UNIQUE IMAGE 5: Coastal/Island setting (Santorini/Amalfi)
+    // UNIQUE IMAGE 5: Amalfi Coast / Greek Islands (Coastal/Island setting)
     image: 'https://images.unsplash.com/photo-1552558661-309489f7f457?auto=format&fit=crop&q=80&w=1000',
     tags: ['Beach', 'Luxury Yachting', 'Exclusive'],
     features: [
@@ -369,7 +369,7 @@ const PackageCard = ({ pkg, onQuote }) => (
       <ImageWithFallback 
         src={pkg.image} 
         alt={pkg.title} 
-        className="w-full h-full group-hover:scale-110 transition-transform duration-1000" 
+        className="w-full h-full object-cover transition-transform duration-1000" 
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-60"></div>
       <div className="absolute top-5 left-5 flex gap-2 flex-wrap">
