@@ -47,7 +47,7 @@ const PACKAGES = [
     duration: '5 Days / 4 Nights',
     locations: ['London', 'Windsor', 'Bath', 'Oxford'],
     priceRange: '₹89,999', // FINAL APPROVED PRICE (The Anchor)
-    // UNIQUE IMAGE: Dynamic London City View (Tower Bridge/City skyline)
+    // UNIQUE IMAGE 1: Dynamic London City View (Matching the style of the user's screenshot hero card)
     image: 'https://images.unsplash.com/photo-1543884394-5b23d9b4b9b9?auto=format&fit=crop&q=80&w=1000',
     tags: ['🔥 Best Seller', 'All Attractions', 'Private Car'],
     features: [
@@ -68,8 +68,8 @@ const PACKAGES = [
     duration: '7 Days / 6 Nights',
     locations: ['London', 'Windsor', 'Oxford'],
     priceRange: '₹1,45,000', // Internal Reference Price
-    // UNIQUE IMAGE: Regal architecture/Palace setting
-    image: 'https://images.unsplash.com/photo-1577741270273-d1447029580a?auto=format&fit=crop&q=80&w=1000',
+    // UNIQUE IMAGE 2: Classic London/Palace setting (Matching user's screenshot style)
+    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1000',
     tags: ['Best Seller', 'Seniors Friendly', 'Shopping'],
     features: [
       'Stay at Premium 5-Star Hotels',
@@ -87,8 +87,8 @@ const PACKAGES = [
     duration: '7 Days / 6 Nights',
     locations: ['Lucerne', 'Interlaken', 'Zermatt'],
     priceRange: '₹3,50,000', 
-    // UNIQUE IMAGE: Swiss Alps/Rail
-    image: 'https://images.unsplash.com/photo-1454153833777-be8e08d13054?auto=format&fit=crop&q=80&w=1000',
+    // UNIQUE IMAGE 3: Majestic Swiss Alps/Luxury Hotel (Matching user's screenshot style)
+    image: 'https://images.unsplash.com/photo-1554629947-3ad751221b22?auto=format&fit=crop&q=80&w=1000',
     tags: ['Alpine', 'Scenic Rail', 'Honeymoon'],
     features: [
       'Stay in Lake-View 5-Star Luxury Suites', 
@@ -106,7 +106,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['Paris', 'Rome', 'Florence'],
     priceRange: '₹2,50,000', 
-    // UNIQUE IMAGE: Classic European Cityscape (Paris/Rome)
+    // UNIQUE IMAGE 4: Paris/Multi-city Europe
     image: 'https://images.unsplash.com/photo-1502602898624-ad8744093c83?auto=format&fit=crop&q=80&w=1000',
     tags: ['Continental', 'Multi-City', 'First Class Rail'],
     features: [
@@ -125,7 +125,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['Amalfi Coast', 'Santorini', 'Mykonos'],
     priceRange: '₹4,50,000',
-    // UNIQUE IMAGE: Coastal/Island setting (Santorini/Amalfi)
+    // UNIQUE IMAGE 5: Coastal/Island setting (Santorini/Amalfi)
     image: 'https://images.unsplash.com/photo-1552558661-309489f7f457?auto=format&fit=crop&q=80&w=1000',
     tags: ['Beach', 'Luxury Yachting', 'Exclusive'],
     features: [
@@ -144,7 +144,7 @@ const PACKAGES = [
     duration: '14 Days / 13 Nights',
     locations: ['Paris', 'Swiss Alps', 'Santorini'],
     priceRange: '₹4,25,000',
-    // UNIQUE IMAGE: Romantic, scenic landscape (Santorini/Alps)
+    // UNIQUE IMAGE 6: Romantic, scenic landscape (Santorini/Alps)
     image: 'https://images.unsplash.com/photo-1490650577907-73d8a9e7019f?auto=format&fit=crop&q=80&w=1000',
     tags: ['Honeymoon', '5-Star Luxury', 'Private Pool'],
     features: [
@@ -163,7 +163,7 @@ const PACKAGES = [
     duration: '8 Days / 7 Nights',
     locations: ['London', 'Edinburgh', 'Highlands'],
     priceRange: '₹1,35,000', // Internal Reference Price
-    // UNIQUE IMAGE: Edinburgh Castle / Cityscape
+    // UNIQUE IMAGE 7: Edinburgh Castle / Cityscape
     image: 'https://images.unsplash.com/photo-1502781252882-974a95c3746a?auto=format&fit=crop&q=80&w=1000',
     tags: ['Best Value', 'Train Journey', 'Nature'],
     features: [
@@ -182,7 +182,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['London', 'Edinburgh', 'Highlands'],
     priceRange: '₹2,15,000', // Internal Reference Price
-    // UNIQUE IMAGE: Scenic Scottish landscape (Loch/Castle)
+    // UNIQUE IMAGE 8: Scenic Scottish landscape (Loch/Castle)
     image: 'https://images.unsplash.com/photo-1525642441926-d6211d2797e5?auto=format&fit=crop&q=80&w=1000',
     tags: ['Signature Collection', '5-Star Hotels', 'Slow Pace'],
     features: [
@@ -267,12 +267,16 @@ const WebsiteHeader = ({ activeSection }) => (
   <nav className="bg-slate-950 text-white py-5 px-6 sticky top-0 z-50 border-b border-amber-600/20 shadow-2xl">
     <div className="max-w-7xl mx-auto flex justify-between items-center">
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20">
-          <Crown size={24} className="text-slate-900 fill-slate-900" />
-        </div>
-        <div className="flex flex-col justify-center">
-            <span className="text-3xl font-serif tracking-wide leading-none text-slate-100 font-medium">Wowyatra Signature</span>
-        </div>
+        {/* WRAPPED LOGO/BRAND IN ANCHOR TAG */}
+        <a href="#experience" className="flex items-center gap-4 cursor-pointer">
+          <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20">
+            {/* Logo color is dark slate to ensure the whole block looks gold/amber */}
+            <Crown size={24} className="text-slate-900 fill-slate-900" /> 
+          </div>
+          <div className="flex flex-col justify-center">
+              <span className="text-3xl font-serif tracking-wide leading-none text-slate-100 font-medium">Wowyatra Signature</span>
+          </div>
+        </a>
       </div>
       
       <div className="hidden md:flex items-center gap-10 text-xs font-bold uppercase tracking-[0.15em] text-slate-400">
@@ -784,7 +788,7 @@ const AIPlanner = ({ onClose }) => {
         {isProcessing ? (
           <div className="flex flex-col items-center justify-center py-8 text-center">
             <Loader2 size={36} className="text-amber-500 animate-spin mb-4" />
-            <h4 className="text-lg font-bold text-slate-800">Consulting partners...</h4>
+            <h4 className="lg font-bold text-slate-800">Consulting partners...</h4>
             <p className="text-xs text-slate-500 mt-1 uppercase tracking-wider">Checking luxury availability.</p>
           </div>
         ) : (
@@ -849,7 +853,7 @@ const AIPlanner = ({ onClose }) => {
                  <div className="space-y-3">
                    {['Pure Veg', 'Jain Meals', 'Non-Veg / Mix', 'Local Cuisine'].map(opt => (
                       <button key={opt} onClick={() => setPreferences({...preferences, food: opt})} 
-                        className={`w-full p-4 border rounded-lg text-left text-sm font-bold tracking-wide transition-all flex justify-between ${preferences.food === opt ? 'border-amber-500 bg-amber-50 text-slate-900' : 'text-slate-500 hover:bg-slate-50'}`}>
+                        className={`w-full p-4 border rounded-lg text-left text-sm font-bold tracking-wide transition-all flex justify-between ${preferences.food === opt ? 'border-amber-500 bg-amber-50' : 'text-slate-500 hover:bg-slate-50'}`}>
                         {opt}
                         {preferences.food === opt && <CheckCircle size={18} className="text-amber-600" />}
                       </button>
