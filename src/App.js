@@ -80,7 +80,26 @@ const PACKAGES = [
     ],
     showPrice: false // HIDE PRICE (Niche Strategy)
   },
-  // 3. NEW EUROPE CLASSIC PACKAGE (NOW THIRD)
+  // 3. SWITZERLAND ALPINE PACKAGE
+  {
+    id: 'euro-swiss',
+    title: 'Switzerland Alpine Luxury',
+    duration: '7 Days / 6 Nights',
+    locations: ['Lucerne', 'Interlaken', 'Zermatt'],
+    priceRange: '₹3,50,000', 
+    // UNIQUE IMAGE: Swiss Alps/Rail
+    image: 'https://images.unsplash.com/photo-1454153833777-be8e08d13054?auto=format&fit=crop&q=80&w=1000',
+    tags: ['Alpine', 'Scenic Rail', 'Honeymoon'],
+    features: [
+      'Stay in Lake-View 5-Star Luxury Suites', 
+      'First Class Glacier Express Tickets',
+      'Private Mountain Excursion to Jungfraujoch',
+      'Customized Activity Pass (Skiing/Hiking)',
+      'Visa Denial Protection Included'
+    ],
+    showPrice: false 
+  },
+  // 4. NEW EUROPE CLASSIC PACKAGE
   {
     id: 'euro-classic',
     title: 'The Classic European Trio',
@@ -99,7 +118,26 @@ const PACKAGES = [
     ],
     showPrice: false 
   },
-  // 4. NEW EUROPE HONEYMOON PACKAGE (NOW FOURTH)
+  // 5. NEW MEDITERRANEAN PACKAGE (COASTAL)
+  {
+    id: 'euro-med',
+    title: 'Mediterranean Coastal Escape',
+    duration: '10 Days / 9 Nights',
+    locations: ['Amalfi Coast', 'Santorini', 'Mykonos'],
+    priceRange: '₹4,50,000',
+    // UNIQUE IMAGE: Coastal/Island setting (Santorini/Amalfi)
+    image: 'https://images.unsplash.com/photo-1552558661-309489f7f457?auto=format&fit=crop&q=80&w=1000',
+    tags: ['Beach', 'Luxury Yachting', 'Exclusive'],
+    features: [
+      'Stay in Private Cliffside Villas',
+      'Chartered Yacht Excursions',
+      'Private Cooking Classes',
+      'Dedicated Local Host',
+      'Visa Denial Protection Included'
+    ],
+    showPrice: false 
+  },
+  // 6. NEW EUROPE HONEYMOON PACKAGE (NOW SIXTH)
   {
     id: 'euro-honeymoon',
     title: 'The European Honeymoon Elite',
@@ -118,7 +156,7 @@ const PACKAGES = [
     ],
     showPrice: false 
   },
-  // 5. MID-RANGE SCOTLAND PACKAGE (NOW FIFTH)
+  // 7. MID-RANGE SCOTLAND PACKAGE (NOW SEVENTH)
   {
     id: 'uk-scotland-saver',
     title: 'London & Scotland Smart Saver',
@@ -137,7 +175,7 @@ const PACKAGES = [
     ],
     showPrice: false // HIDE PRICE (Niche Strategy)
   },
-  // 6. TOP-TIER LUXURY SCOTLAND PACKAGE (NOW LAST)
+  // 8. TOP-TIER LUXURY SCOTLAND PACKAGE (NOW LAST)
   {
     id: 'uk-scotland-royal',
     title: 'The Royal UK & Scotland Grand Tour',
