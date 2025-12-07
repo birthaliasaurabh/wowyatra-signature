@@ -40,14 +40,14 @@ const GlobalStyles = () => (
 // ==========================================
 
 const PACKAGES = [
-  // 1. THE HERO PACKAGE (MOVED TO FIRST POSITION)
+  // 1. THE HERO PACKAGE (POWER-PACKED LONDON GRAND)
   {
     id: 'uk-power',
     title: 'The Power-Packed London Grand',
     duration: '5 Days / 4 Nights',
     locations: ['London', 'Windsor', 'Bath', 'Oxford'],
-    priceRange: '₹89,999', // FINAL APPROVED PRICE (The Anchor)
-    // Image: London City Focus (Tower Bridge in view)
+    priceRange: '₹89,999', 
+    // FINAL IMAGE 1: Modern London skyline for high-impact sale
     image: 'https://images.unsplash.com/photo-1543884394-5b23d9b4b9b9?auto=format&fit=crop&q=80&w=1000',
     tags: ['🔥 Best Seller', 'All Attractions', 'Private Car'],
     features: [
@@ -61,14 +61,14 @@ const PACKAGES = [
     isPromo: true,
     showPrice: true 
   },
-  // 2. LONDON ROYAL FAMILY EXPERIENCE (NOW SECOND)
+  // 2. LONDON ROYAL FAMILY EXPERIENCE
   {
     id: 'uk-royal-family',
     title: 'The London Royal Family Experience',
     duration: '7 Days / 6 Nights',
     locations: ['London', 'Windsor', 'Oxford'],
-    priceRange: '₹1,45,000', // Internal Reference Price
-    // Image: Regal architecture/Classic London
+    priceRange: '₹1,45,000', 
+    // FINAL IMAGE 2: Windsor/Regal architecture
     image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1000',
     tags: ['Best Seller', 'Seniors Friendly', 'Shopping'],
     features: [
@@ -87,7 +87,7 @@ const PACKAGES = [
     duration: '7 Days / 6 Nights',
     locations: ['Lucerne', 'Interlaken', 'Zermatt'],
     priceRange: '₹3,50,000', 
-    // Image: Focus on pristine Swiss Alps and architecture (Lucerne)
+    // FINAL IMAGE 3: Focus on pristine Swiss Alps/Lucerne lake view
     image: 'https://images.unsplash.com/photo-1550340441-cb6c18f170af?auto=format&fit=crop&q=80&w=1000',
     tags: ['Alpine', 'Scenic Rail', 'Honeymoon'],
     features: [
@@ -106,7 +106,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['Paris', 'Rome', 'Florence'],
     priceRange: '₹2,50,000', 
-    // Image: Classic Paris/Rome view (Eiffel Tower in the background)
+    // FINAL IMAGE 4: Classic European Cityscape (Paris/Rome Colosseum)
     image: 'https://images.unsplash.com/photo-1502602898624-ad8744093c83?auto=format&fit=crop&q=80&w=1000',
     tags: ['Continental', 'Multi-City', 'First Class Rail'],
     features: [
@@ -125,7 +125,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['Amalfi Coast', 'Santorini', 'Mykonos'],
     priceRange: '₹4,50,000',
-    // UNIQUE IMAGE 5: Amalfi Coast / Greek Islands (Coastal/Island setting)
+    // FINAL IMAGE 5: Amalfi Coast / Greek Islands (Coastal/Island setting)
     image: 'https://images.unsplash.com/photo-1552558661-309489f7f457?auto=format&fit=crop&q=80&w=1000',
     tags: ['Beach', 'Luxury Yachting', 'Exclusive'],
     features: [
@@ -144,7 +144,7 @@ const PACKAGES = [
     duration: '14 Days / 13 Nights',
     locations: ['Paris', 'Swiss Alps', 'Santorini'],
     priceRange: '₹4,25,000',
-    // UNIQUE IMAGE 6: Romantic, scenic landscape (Santorini/Alps)
+    // FINAL IMAGE 6: Romantic, scenic landscape (Santorini/Alps)
     image: 'https://images.unsplash.com/photo-1490650577907-73d8a9e7019f?auto=format&fit=crop&q=80&w=1000',
     tags: ['Honeymoon', '5-Star Luxury', 'Private Pool'],
     features: [
@@ -163,7 +163,7 @@ const PACKAGES = [
     duration: '8 Days / 7 Nights',
     locations: ['London', 'Edinburgh', 'Highlands'],
     priceRange: '₹1,35,000', // Internal Reference Price
-    // UNIQUE IMAGE 7: Edinburgh Castle / Cityscape
+    // FINAL IMAGE 7: Edinburgh Castle / Cityscape
     image: 'https://images.unsplash.com/photo-1502781252882-974a95c3746a?auto=format&fit=crop&q=80&w=1000',
     tags: ['Best Value', 'Train Journey', 'Nature'],
     features: [
@@ -182,7 +182,7 @@ const PACKAGES = [
     duration: '10 Days / 9 Nights',
     locations: ['London', 'Edinburgh', 'Highlands'],
     priceRange: '₹2,15,000', // Internal Reference Price
-    // UNIQUE IMAGE 8: Scenic Scottish landscape (Loch/Castle)
+    // FINAL IMAGE 8: Scenic Scottish landscape (Loch/Castle)
     image: 'https://images.unsplash.com/photo-1525642441926-d6211d2797e5?auto=format&fit=crop&q=80&w=1000',
     tags: ['Signature Collection', '5-Star Hotels', 'Slow Pace'],
     features: [
